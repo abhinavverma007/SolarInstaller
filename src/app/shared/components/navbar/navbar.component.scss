@@ -1,0 +1,103 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  background-color: #4caf50;
+  color: white;
+  width: 30vw;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #ffeb3b;
+    color: #333;
+  }
+}
+
+/* Optional styling for better visuals */
+.mat-toolbar {
+  position: fixed;
+}
+
+.mat-sidenav-content {
+  margin-top: 64px; /* Adjust based on toolbar height */
+}
+
+@media (max-width: 600px) {
+  .sidenav {
+    width: 50vw;
+  }
+}
+
+
+.desktop-toolbar {
+  display: flex;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+
+  .spacer {
+      flex: 1;
+  }
+
+  button {
+    color: white;
+
+  }
+
+  button :hover {
+    background-color:  rgba(255, 255, 255, 0.1);
+  }
+
+  mat-icon {
+    color: white;
+  }
+}
+
+.mobile-sidenav-container {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .desktop-toolbar {
+    display: none; /* Hide toolbar on mobile */
+  }
+
+  .mobile-sidenav-container {
+    display: flex; /* Show sidenav on mobile */
+    height: 100vh; /* Full height */
+  }
+
+  .mobile-toggle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: yellow;
+    border: none;
+  }
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #388e3c;
+}
+
+.sidenav-header h2 {
+  margin: 0; /* Remove default margin */
+}
+
+.mat-drawer-container {
+  background: none;
+}
