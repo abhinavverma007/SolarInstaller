@@ -10,6 +10,11 @@
   background-color: #4caf50;
   color: white;
   width: 30vw;
+  position: fixed;
+  height: 100vh;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
 
   a {
     color: white;
@@ -37,24 +42,23 @@
   }
 }
 
-
 .desktop-toolbar {
   display: flex;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
+  z-index: 1000;
 
   .spacer {
-      flex: 1;
+    flex: 1;
   }
 
   button {
     color: white;
-
   }
 
   button :hover {
-    background-color:  rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   mat-icon {
@@ -73,7 +77,7 @@
 
   .mobile-sidenav-container {
     display: flex; /* Show sidenav on mobile */
-    height: 100vh; /* Full height */
+    flex-direction: column;
   }
 
   .mobile-toggle {
@@ -100,4 +104,9 @@
 
 .mat-drawer-container {
   background: none;
+}
+
+.active {
+  background-color: purple;
+  color: white;
 }
